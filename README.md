@@ -99,20 +99,43 @@ We provide our pre-trained models, they can be downloaded by links below.
     <th>mIoU</th>
     <th>Download</th>
   </tr>
-  <tr>
+  <tr align="center">
     <td>ViT-S/16</td>
-    <td align="center">PVOC</td>
-    <td>69.5%</td>
+    <td>PVOC</td>
+    <td>69.5</td>
     <td><a href="https://pan.baidu.com/s/1vhTu6v0BJit_9mMEsZiQeg?pwd=a7iq">model</a></td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>ViT-S/16</td>
-    <td align="center">COCO-Stuff-27</td>
-    <td>35.1%</td>
+    <td>COCO-Stuff-27</td>
+    <td>35.1</td>
     <td><a href="https://pan.baidu.com/s/1A7GeSNDwwfQPsCH404jYAw?pwd=rsxd">model</a></td>
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th>Encoder</th>
+    <th>Dataset</th>
+    <th>FG-ARI</th>
+    <th>mBO</th>
+    <th>Download</th>
+  </tr>
+  <tr align="center">
+    <td>ViT-S/16</td>
+    <td>MOVi-C</td>
+    <td>48.0</td>
+    <td>31.2</td>
+    <td><a href="https://pan.baidu.com/s/1xca8dLAOO_m04Jrn3eP8UQ?pwd=aant">model</a></td>
+  </tr>
+  <tr align="center">
+    <td>ViT-S/16</td>
+    <td align="center">MOVi-E</td>
+    <td>44.1</td>
+    <td>20.4</td>
+    <td><a href="https://pan.baidu.com/s/1_2rcs5Qr4bHiKH9tN8X4dw?pwd=yk4j">model</a></td>
+  </tr>
+</table>
 
 
 

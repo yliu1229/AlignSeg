@@ -121,6 +121,16 @@ def start_train():
                                            data_dir=data_config["data_dir"],
                                            train_transforms=train_transforms,
                                            val_transforms=None)
+    elif 'movi' in dataset_name:
+        train_data_module = MOViDataModule(data_dir=data_config["data_dir"],
+                                           dataset_name=data_config['dataset_name'],
+                                           batch_size=train_config["batch_size"],
+                                           num_workers=config["num_workers"],
+                                           train_split="frames",
+                                           val_split="images",
+                                           train_image_transform=train_transforms,
+                                           val_image_transform=val_image_transforms,
+                                           val_target_transform=val_target_transforms)
     else:
         raise ValueError(f"Data set {dataset_name} not supported")
 

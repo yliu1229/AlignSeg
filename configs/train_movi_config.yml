@@ -1,0 +1,44 @@
+num_workers: 4
+
+data:
+  data_dir: "./Data/"
+  dataset_name: "movi_e"    # "movi_c" or "movi_e"
+  size_crops: [224, 224]
+  augment_image: False
+  jitter_strength: 1.0
+  blur_strength: 1.0
+  min_scale_crops: [0.5, 0.05]
+  max_scale_crops: [1., 0.25]
+  min_intersection_crops: 0.05
+  nmb_crops: [1, 2]
+  size_crops_val: 256   # Crops size for validation and seg maps viz
+  num_classes_val: 17
+
+train:
+  batch_size: 32   # effective batch size is bs * gpus * res_w ** 2
+  max_epochs: 10
+  seed: 3407
+  fix_vit: True
+  exclude_norm_bias: True
+  roi_align_kernel_size: 7
+  arch: 'vit_small'
+  patch_size: 16
+  embed_dim: 384
+  hidden_dim: 768
+  num_decode_layers: 6
+  decoder_num_heads: 4
+  num_queries: 18  # effective queries for mask generation, always ends with an 'Others' query
+  last_self_attention: True   # whether use attention map as foreground hint
+  ce_temperature: 1
+  lr_decoder: 0.0005
+  final_lr: 0.
+  weight_decay: 0.04
+  weight_decay_end: 0.5
+  negative_pressure: 0.13     # 0.13 for MOVi-C, 0.13 for MOVi-E
+  corr_coefficient: 0.15
+  epsilon: 0.05
+  save_checkpoint_every_n_epochs: 1
+  checkpoint:
+  pretrained_model: 'dino_vitsmall16.pth'
+  prototype_queries:
+  fix_prototypes:

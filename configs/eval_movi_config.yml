@@ -1,0 +1,21 @@
+num_workers: 1
+
+data:
+  data_dir: "./Data/"
+  dataset_name: "movi_e"    # "movi_e" or "movi_c"
+  num_classes: 17
+  size_crops: 256
+
+val:
+  arch: 'vit_small'
+  batch_size: 1
+  seed: 3407
+  patch_size: 16
+  embed_dim: 384
+  hidden_dim: 768
+  num_decode_layers: 6
+  decoder_num_heads: 4
+  num_queries: 18  # effective queries for mask generation, always ends with an 'Others' query
+  last_self_attention: False   # whether use attention map as foreground hint
+  mask_eval_size: 256
+  checkpoint: './log_tmp/movi_e-vit_small-bs32/model/epoch10.pth'

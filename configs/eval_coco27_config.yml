@@ -13,7 +13,7 @@ val:
   patch_size: 16
   embed_dim: 384
   hidden_dim: 768
-  num_decode_layers: 1
+  num_decode_layers: 3
   decoder_num_heads: 3
   num_queries: 5  # effective queries for mask generation, always ends with an 'Others' query
   last_self_attention: False   # whether use attention map as foreground hint

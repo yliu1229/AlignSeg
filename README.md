@@ -103,7 +103,7 @@ We provide our pre-trained models, they can be downloaded by links below.
     <td>ViT-S/16</td>
     <td>PVOC</td>
     <td>69.5</td>
-    <td><a href="https://pan.baidu.com/s/1JwIwJ-vfQ8-HmxFdfAimvA?pwd=hd27">model</a></td>
+    <td><a href="https://pan.baidu.com/s/1DTs_V1JkXP0TolaWyu6U8A?pwd=s8kd">model</a></td>
   </tr>
   <tr align="center">
     <td>ViT-S/16</td>

@@ -41,4 +41,5 @@ train:
   save_checkpoint_every_n_epochs: 1
   checkpoint: #''
   pretrained_model: './dino_vitsmall16.pth'
+  prototype_queries: 
   fix_prototypes: False
